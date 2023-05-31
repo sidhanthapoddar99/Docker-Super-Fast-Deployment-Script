@@ -6,8 +6,8 @@ FROM ubuntu_image
 # RUN bash
 
 
-# set the docker working dir to /Project_Name
-WORKDIR /Project_Name
+# set the docker working dir to /project_name
+WORKDIR /project_name
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -73,16 +73,16 @@ RUN apt-get update && apt-get install -y \
 # initialize the prefered conda shell. This modifies bashrc to ensure shell context is correct
 # RUN conda init bash
 
-# create the Project_Name conda environment
+# create the project_name conda environment
 # all semblace python related commands, tests, and long running processes
 # should be executed in this conda environment
 
 # do not auto activate the base environment
 # RUN conda config --set auto_activate_base false
 
-# RUN conda create  -y --name Project_Name python=3.8 pip
+# RUN conda create  -y --name project_name python=3.8 pip
 
 # # add interactive conda activation command to the bashrc
-# # ensures that you are in the 'Project_Name' conda environment when you get a shell in the container
+# # ensures that you are in the 'project_name' conda environment when you get a shell in the container
 #.bashrc file is like the .ps1 file in windows which runs before the bash is actiavted
-# RUN echo "conda activate Project_Name" >> /root/.bashrc
+# RUN echo "conda activate project_name" >> /root/.bashrc

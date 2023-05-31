@@ -1,9 +1,9 @@
 # Changing the name
 
-Replace "Project_Name_" with your_procject specific name for example
+Replace "project_name_" with your_procject specific name for example
 if there is a project name Test_Code it becomes
 
-Project_Name_Docke_Image -> Test_Code_Docker_Image
+project_name_docker_image -> Test_Code_Docker_Image
 
 
 To execute linix files 

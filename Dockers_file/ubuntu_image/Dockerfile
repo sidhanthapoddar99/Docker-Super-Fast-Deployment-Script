@@ -1,4 +1,4 @@
-# Project_Name Base Image
+# project_name Base Image
 # image used by containers running internal demonstration applications
 #################################################
 #### __________System dependencies___________  ####

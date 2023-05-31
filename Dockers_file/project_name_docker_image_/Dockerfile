@@ -1,11 +1,11 @@
-FROM Project_Name_Docke_Image_backup
+FROM project_name_docker_image_backup
 
 RUN bash
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# set the docker working dir to /Project_Name
-WORKDIR /Project_Name
+# set the docker working dir to /project_name
+WORKDIR /project_name
 
 ### Copy the requirements.txt file to the docker image ###
 
@@ -19,9 +19,9 @@ RUN python3 requirements.py
 
 ### If you want to use conda to install packages, uncomment the following lines ###
 
-# RUN conda run -n Project_Name pip install -r requirements.txt
+# RUN conda run -n project_name pip install -r requirements.txt
 
 ### If you want to activate the conda environment and run the app, uncomment the following lines ###
 
-# ENTRYPOINT [ "conda activate Project_Name" ]
+# ENTRYPOINT [ "conda activate project_name" ]
 # CMD ["python","app.py"]
