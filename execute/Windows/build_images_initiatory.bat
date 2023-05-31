@@ -10,12 +10,6 @@ echo ================================ Stopping and deleting old docker container
 docker stop $(docker ps -f name=project_name_docker_container -q);
 docker rm project_name_docker_container;
 
-echo ============================== building ubuntu image ======================================
-
-cd ubuntu_image
-docker image build -t ubuntu_image .
-cd ../
-
 echo ================================ building project_name_docker_image image ======================================
 
 docker build --progress=plain -f "./project_name_docker_image_initiatory/Dockerfile" -t project_name_docker_image .
