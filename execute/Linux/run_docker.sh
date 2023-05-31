@@ -30,7 +30,7 @@ docker run -e TZ=IST  \
 #     -v "$(pwd)/data_mount":"/Project_Name/data_mount" \
 #     -p 2000:5000 \
 #     Project_Name_Docke_Image \
-#     "conda" "run" "-n" "kec" "gunicorn" "-w" "1" "-b" "0.0.0.0:5000" "app:app";
+#     "conda" "run" "-n" "Project_Name" "gunicorn" "-w" "1" "-b" "0.0.0.0:5000" "app:app";
 #### sample command "python3 app.py";
 
 

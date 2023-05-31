@@ -31,7 +31,7 @@ docker run -e TZ=Asia/Kolkata ^
 @REM     -p 5000:5000 ^
 @REM     --name Project_Name_Docke_Container ^
 @REM     Project_Name_Docke_Image^
-@REM     "conda" "run" "-n" "kec" "gunicorn" "-w" "1" "-b" "0.0.0.0:5000" "app:app"
+@REM     "conda" "run" "-n" "Project_Name" "gunicorn" "-w" "1" "-b" "0.0.0.0:5000" "app:app"
 
 @REM    sample command to run in container "python" "app.py" 
 
