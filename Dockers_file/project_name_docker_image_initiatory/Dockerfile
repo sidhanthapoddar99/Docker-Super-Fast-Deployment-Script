@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
 
 
 ### Uncomment the following lines if you want to install postgresql ###
-# RUN apt-get install postgresql postgresql-contrib
+# RUN apt-get install -y postgresql postgresql-contrib
 
 ### wkhtmltopdf installation ###
 
