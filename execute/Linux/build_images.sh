@@ -6,16 +6,16 @@ cd Dockers_file;
 
 echo "==================================== Stopping and deleting old docker container =========================================";
 
-docker stop $(docker ps -f name=Project_Name_Docke_Container -q);
-docker rm Project_Name_Docke_Container;
+docker stop $(docker ps -f name=project_name_docker_container -q);
+docker rm project_name_docker_container;
 
-echo "==================================== building Project_Name_Docke_Image image =========================================";
+echo "==================================== building project_name_docker_image image =========================================";
 
-docker build --progress=plain -f "./Project_Name_Docke_Image/Dockerfile" -t Project_Name_Docke_Image .;
+docker build --progress=plain -f "./project_name_docker_image/Dockerfile" -t project_name_docker_image .;
 
-echo "================================ building Project_Name_Docke_Image_backup image ======================================";
+echo "================================ building project_name_docker_image_backup image ======================================";
 
-docker image build -f "./Project_Name_Docke_Image_backup/Dockerfile" -t Project_Name_Docke_Image_backup .;
+docker image build -f "./project_name_docker_image_backup/Dockerfile" -t project_name_docker_image_backup .;
 
 cd ../;
 cd execute;
