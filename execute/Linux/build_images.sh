@@ -13,10 +13,6 @@ echo "==================================== building project_name_docker_image im
 
 docker build --progress=plain -f "./project_name_docker_image/Dockerfile" -t project_name_docker_image .;
 
-echo "================================ building project_name_docker_image_backup image ======================================";
-
-docker image build -f "./project_name_docker_image_backup/Dockerfile" -t project_name_docker_image_backup .;
-
 cd ../;
 cd execute;
 cd Linux;
