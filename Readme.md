@@ -14,3 +14,19 @@ To execute linix files
 To run on windows 
 
 - Directly run the bat file
+
+
+# Docker Image Initiator
+
+- this docker package installs all dependencies on software level
+- Example applications and other softwares (Python latex etc)
+
+# Docker Base Image 
+
+- This docker file contains image intitiator + <b> Packages required that need to be updated regularly</b>
+- Example python libs
+
+# Docker Image
+
+- This is the final image that contains base image + extra commands 
+- example scripts to run before starting dockers or additional execution commands
